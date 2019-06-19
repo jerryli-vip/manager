@@ -33,11 +33,13 @@ public class UserController {
     @ResponseBody
     public String addUser(User user) {
         if (StringUtils.isEmpty(user.getUsername())) {
-            return "failure";
+            return "fail";
         }
         user.setUpdatedDate(new Date());
         userService.addUser(user);
+
         System.out.println("Add user success");
+
         return "success";
     }
 
