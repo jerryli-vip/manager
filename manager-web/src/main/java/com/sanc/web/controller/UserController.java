@@ -37,7 +37,7 @@ public class UserController {
         }
         user.setUpdatedDate(new Date());
         userService.addUser(user);
-        System.out.println("Add user successfully");
+        System.out.println("Add user success");
         return "success";
     }
 
@@ -46,7 +46,7 @@ public class UserController {
     public String listUser() {
         List<User> data = userService.listUser();
 
-        System.out.println("List user successfully");
+        System.out.println("List user success");
 
         String result = JSONArray.toJSONString(data);
 
