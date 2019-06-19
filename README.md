@@ -1,0 +1,1 @@
+maven convergent projects sample
