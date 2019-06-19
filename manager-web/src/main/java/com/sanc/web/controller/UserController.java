@@ -35,6 +35,7 @@ public class UserController {
         if (StringUtils.isEmpty(user.getUsername())) {
             return "fail";
         }
+
         user.setUpdatedDate(new Date());
         userService.addUser(user);
 
